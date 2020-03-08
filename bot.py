@@ -4,12 +4,8 @@ client = discord.Client()
 
 ID_ROLE_MEMBER = 663185140675117057
 
-import sys
-print(sys.version)
-
 @client.event
 async def on_member_join(member):
-    print(member)
     # 用意したIDから Role オブジェクトを取得
     role = member.guild.get_role(ID_ROLE_MEMBER)
 
@@ -36,4 +32,4 @@ async def on_message(message):
             await message.channel.send(m)
 
 
-client.run("Njg1OTgxODA2MTgwMzAyODgy.XmQksg.-_DSAiBT0u2gpEeWxIP6DnC1yP4")
+client.run("Njg1OTgxODA2MTgwMzAyODgy.XmRJ2A.9Rcb6OULAYZQI-w8DNL_U5Pmk78")
